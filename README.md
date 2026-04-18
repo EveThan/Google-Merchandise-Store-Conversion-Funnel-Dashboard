@@ -18,28 +18,28 @@ The interactive dashboard can be accessed on [Looker Studio](https://lookerstudi
 
 ## Conversion Funnel Setup
 The conversion funnel consists of the following GA4 events \
-session_start → view_item → add_to_cart → begin_checkout → add_shipping_info → add_payment_info → purchase.
+Session Start → View Item → Add to Cart → Begin Checkout → Add Shipping Info → Add Payment Info → Purchase.
 
 Details behind the selection of these events as conversion funnel stages can be found on [Google Colab](https://colab.research.google.com/drive/1iEq6xPdefjna970kkfhkkkT9nhhARYfN#scrollTo=BDjTuA4GL0f3).
 
 This analysis uses a user-based conversion funnel, which means that each user is counted only once. This differs from session-based funnels where a user can be counted multiple times across different sessions.
 
-Additionally, a closed funnel approach is implemented, which means that only users who proceed through the funnel stages in the order above (session_start → view_item → add_to_cart → ...) are included, although they may drop off at any step. Users who skip stages or complete them out of order are not included in the conversion funnel.
+Additionally, a closed funnel approach is implemented, which means that only users who proceed through the funnel stages in the order above (Session Start → View Item → Add to Cart → ...) are included, although they may drop off at any step. Users who skip stages or complete them out of order are not included in the conversion funnel.
 
-In the interactive dashboard, the conversion funnel is also anchored on each user's session_start_date. This means that users are included in the conversion funnel if their session_start_date falls within the selected date range. All subsequent funnel events (e.g., view_item, add_to_cart, purchase) are attributed to that same session_start_date and are counted in the conversion funnel even if they occurred outside the selected date range. This ensures a more complete view of user progression through the funnel after their first visit which happened within the selected date range.
+In the interactive dashboard, the conversion funnel is also anchored on each user's Session Start Date. This means that users are included in the conversion funnel if their Session Start Date falls within the selected date range. All subsequent funnel events (e.g., View Item, Add to Cart, Purchase) are attributed to that same Session Start Date and are counted in the conversion funnel even if they occurred outside the selected date range. This ensures a more complete view of user progression through the funnel after their first visit which happened within the selected date range.
 
 ## Conversion Funnel Insights Summary
 ### Overall Conversion Funnel
-1. 80.04% drop-off from session_start to view_item
+1. 80.04% drop-off from Session Start to View Item
    - May be due to low-intent user traffic or unclear website navigation. Potential solution includes improving ad targeting and landing page UI and UX.
 
-2. 84.80% drop-off from view_item to add_to_cart
+2. 84.80% drop-off from View Item to Add to Cart
    - May be due to high prices, low or unavailable stock, or insufficient product information. Potential solution includes improving product detail pages and ensuring ad copies accurately reflect the products.
 
-3. 86.09% drop-off from add_to_cart to begin_checkout
+3. 86.09% drop-off from Add to Cart to Begin Checkout
    - May be due to the pop-up window requesting account creation and a lack of urgency (e.g., no low stock indicators or limited-time offers). Potential solutions include removing the barrier of account creation and introducing urgency nudges such as time-sensitive deals.
 
-4. 37.98% drop-off from add_shipping_info to add_payment_info
+4. 37.98% drop-off from Add Shipping Info to Add Payment Info
    - May be due to high shipping costs or long delivery times. Potential solutions include offering free shipping on qualifying orders and improving logistics to ensure faster delivery.
 
 ### Segmented by Device Type
