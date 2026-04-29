@@ -1,6 +1,7 @@
 # Google Merchandise Store — E-commerce Data Conversion Funnel Dashboard
 
-<p align="center"> <img height="600" alt="image" src="https://github.com/user-attachments/assets/b29f4630-9ac6-4899-8129-be01b111a49e" /> </p>
+<p align="center"> <img width="853" height="856" alt="image" src="https://github.com/user-attachments/assets/c3635c83-5bb8-4279-94b8-6ccfb87f36ec" />
+" /> </p>
 
 
 ## Goal
